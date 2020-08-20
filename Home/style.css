@@ -8,6 +8,7 @@ cada pagina*/
   margin: 0;
 }
 
+/*nav*/
 nav {
   height: 5vh;
   background: rgb(88, 88, 88);
@@ -18,14 +19,18 @@ nav h3 {
   position: relative;
   left: 45%;
 }
+/*nav end*/
 
+/*article*/
 article img {
   background: grey;
   width: 100%;
   height: auto;
   margin-bottom: 100px;
 }
+/*article end*/
 
+/*section*/
 section {
   width: 174px;
   height: 290px;
@@ -53,6 +58,59 @@ section a {
   height: 290px;
 }
 
+/*section end*/
+
+/*main*/
+
+h2 {
+  font-size: 17px;
+  text-align: center;
+}
+
+main {
+  transform: translate(0px, 850px);
+}
+
+a img {
+  width: 120px;
+  transform: translate(100px, -70px);
+}
+
+a p {
+  text-decoration: none;
+  transform: translate(147px, -70px);
+}
+
+#premium_f {
+  position: relative;
+  top: -130px;
+}
+
+main a {
+  cursor: pointer;
+}
+
+/*main end*/
+
+/*footer*/
+
+footer {
+  transform: translate(0px, 870px);
+  background-color: #ffccff;
+  width: 320px;
+  height: 75px;
+}
+
+footer img {
+  width: 30px;
+  transform: translate(10px, 20px);
+}
+
+footer p {
+  font-size: 5px;
+  transform: translate(12px, 23px);
+}
+/*footer end*/
 @media (min-width: 650px) {
   nav h3 {
     margin-left: 50%;
