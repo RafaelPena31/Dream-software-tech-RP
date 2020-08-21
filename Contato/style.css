@@ -1,0 +1,62 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #558b8f;
+}
+
+main {
+  background-color: #558b8f;
+  width: 95%;
+  margin-left: 10px;
+}
+
+main h3 {
+  font-size: 26px;
+  color: whitesmoke;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  text-align: center;
+}
+
+form {
+  width: 100%;
+  position: center;
+}
+
+input {
+  width: 97%;
+  margin-bottom: 40px;
+  height: 30px;
+}
+
+label {
+  color: whitesmoke;
+}
+
+input:hover {
+  border-color: #81d5db;
+}
+
+.enviar {
+  background-color: whitesmoke; /* Green */
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border: 2px solid #457275;
+}
+
+.enviar:hover {
+  background-color: #2f4d4f;
+  color: whitesmoke;
+  border: none;
+}
+
