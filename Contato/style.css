@@ -16,10 +16,11 @@ header {
     rgba(106, 33, 153, 1) 43%
   );
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   border-radius: 0 0 0.8rem 0.8rem;
   margin-bottom: 17px;
+  padding: 1rem;
 }
 
 header h3 {
@@ -27,8 +28,21 @@ header h3 {
 }
 
 /*menu dropdown*/
+.dropbtn {
+  background-color: transparent;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  min-width: 160px;
+  display: flex;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+
 .dropdown {
-  align-items: flex;
+  position: relative;
+  display: inline-block;
 }
 
 .dropdown-content {
@@ -36,7 +50,7 @@ header h3 {
   position: absolute;
   background-color: #f1f1f1;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
 
@@ -47,20 +61,21 @@ header h3 {
   display: block;
 }
 
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
+.dropdown-content a:hover {background-color: #ddd;}
 
-.dropdown:hover .dropdown-content {
-  display: block;
-}
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: transparent; border: 1px solid #fff;}
 /*menu dropdown end*/
 /*header end*/
 
 /*body*/
 body {
   background: whitesmoke;
-  min-height: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
 }
 
 /*form*/
@@ -69,13 +84,13 @@ form {
   position: center;
   display: flex;
   flex-direction: column;
+  padding: 1rem;
 }
 
 /*main inputs and labels*/
 main {
   background: whitesmoke;
-  width: 94%;
-  margin-left: 10px;
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -100,6 +115,7 @@ textarea {
   border-radius: 5px;
   color: black;
   width: 100%;
+  resize: vertical;
 }
 /*main inputs and labels end*/
 
@@ -146,7 +162,8 @@ footer {
 
 /*img Dream Space*/
 img {
-  width: 70px;
+  width: 100%;
+  max-width: 70px;
   border-radius: 10px;
   margin-bottom: 10px;
   margin-top: 10px;
@@ -157,13 +174,22 @@ img {
 /*media*/
 @media (min-width: 600px) {
 
+  header {
+    padding: 3rem;
+  }
+
   header h3 {
     font-size: 32px;
-    margin: 4rem;
   }
 
   main {
-    margin-left: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  main div {
+    width: 50%;
   }
 
   main label {
@@ -173,25 +199,19 @@ img {
   main input {
     height: 50px;
     font-size: 23px;
-    width: 90%;
+    width: 100%;
   }
 
   textarea {
     height: 300px;
     font-size: 23px;
-    width: 90%;
+    width: 100%;
   }
 
   section button {
     font-size: 23px;
     padding: 20px 40px;
     margin-top: 30px;
-  }
-
-  footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
   }
 
   footer img {
