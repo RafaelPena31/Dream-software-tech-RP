@@ -7,20 +7,30 @@
     <title>Contato</title>
   </head>
   <body>
+    <nav class="dropdown">
+      <a href=""><img src="img/menu.jpg" height=" 75 px" alt="" /></a>
+      <div class="dropdown-content">
+        <a href="#">Home</a>
+        <a href="#">Serviços</a>
+        <a href="#">História</a>
+        <a href="#">Finanças</a>
+      </div>
+    </nav>
     <form action="produtos.php" method="post">
-        <main>
-          <h3>Fale Conosco!</h3>
-          <label for="nome">Nome:</label>
-          <input type="text" required autofocus />
-          <label for="email">Email:</label>
-          <input type="email" required />
-          <label for="telefone">Telefone:</label>
-          <input type="number" required />
-          <label for="nome">Assunto:</label>
-          <input type="text" required />
-          <div class="divbotao">
-            <button type="submit" class="enviar" name="salvar">Enviar</button>
-        </main>
+      <main>
+        <h3>Fale Conosco!</h3>
+        <label for="nome">Nome:</label>
+        <input type="text" required autofocus />
+        <label for="email">Email:</label>
+        <input type="email" required />
+        <label for="telefone">Telefone:</label>
+        <input type="number" required />
+        <label for="nome">Assunto:</label>
+        <textarea rows="16" cols="48"></textarea>
+      </main>
+      <section>
+        <button type="submit">Enviar</button>
+      </section>
     </form>
   </body>
 </html>
