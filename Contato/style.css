@@ -1,15 +1,34 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Archivo, sans-serif;
+  box-sizing: border-box;
 }
 
-body {
-  background-color: #558b8f;
+/*header*/
+header {
+  height: 12vh;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(175, 88, 228, 1) 0%,
+    rgba(106, 33, 153, 1) 43%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 0 0.8rem 0.8rem;
+  margin-bottom: 17px;
 }
 
+header h3 {
+  color: #fff;
+}
+
+/*menu dropdown*/
 .dropdown {
-  align-items: flex-start;
+  align-items: flex;
 }
 
 .dropdown-content {
@@ -35,58 +54,64 @@ body {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+/*menu dropdown end*/
+/*header end*/
 
-main {
-  background-color: #558b8f;
-  width: 95%;
-  margin-left: 10px;
+/*body*/
+body {
+  background: whitesmoke;
 }
 
-main h3 {
-  font-size: 26px;
-  color: whitesmoke;
-  margin-bottom: 25px;
-  margin-top: 15px;
-  text-align: center;
-}
-
+/*form*/
 form {
   width: 100%;
   position: center;
+  display: flex;
+  flex-direction: column;
+}
+
+/*main inputs and labels*/
+main {
+  background: whitesmoke;
+  width: 94%;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 input {
-  width: 97%;
+  width: 100%;
   margin-bottom: 40px;
   height: 30px;
-  display: flex;
-  flex-direction: column;
   border-radius: 5px;
 }
 
-label {
-  color: whitesmoke;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-
 input:hover {
-  border-color: #81d5db;
+  border-color: rgba(106, 33, 153, 1) 43%;
 }
 
+label {
+  color: black;
+  flex-direction: column;
+}
+
+textarea {
+  border-radius: 5px;
+  color: black;
+  width: 100%;
+}
+/*main inputs and labels end*/
+
+/*section button*/
 section {
   justify-content: center;
   align-content: center;
   display: flex;
 }
 
-textarea {
-  border-radius: 5px;
-}
-
 section button {
-  background-color: whitesmoke; /* Green */
-  color: black;
+  background-color: black;
+  color: white;
   padding: 16px 32px;
   text-align: center;
   text-decoration: none;
@@ -94,11 +119,34 @@ section button {
   margin: 14px 2px;
   transition-duration: 0.4s;
   cursor: pointer;
-  border: 2px solid #457275;
+  border-radius: 1rem;
+  border: none;
+  display: flex;
 }
 
 section button:hover {
-  background-color: #2f4d4f;
-  color: whitesmoke;
+  background-color: green;
+  color: white;
   border: none;
 }
+/*section button end*/
+/*form end*/
+/*body end*/
+
+/*foot*/
+/*footer*/
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #451666;
+}
+
+/*img Dream Space*/
+footer img {
+  width: 70px;
+  border-radius: 10px;
+}
+/*foot end*/
+/*footer end*/
