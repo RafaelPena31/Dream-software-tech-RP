@@ -60,6 +60,7 @@ header h3 {
 /*body*/
 body {
   background: whitesmoke;
+  min-height: 100%;
 }
 
 /*form*/
@@ -120,7 +121,7 @@ section button {
   transition-duration: 0.4s;
   cursor: pointer;
   border-radius: 1rem;
-  border: none;
+  border: 3px solid white;
   display: flex;
 }
 
@@ -144,9 +145,56 @@ footer {
 }
 
 /*img Dream Space*/
-footer img {
+img {
   width: 70px;
   border-radius: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 /*foot end*/
 /*footer end*/
+
+/*media*/
+@media (min-width: 600px) {
+
+  header h3 {
+    font-size: 32px;
+    margin: 4rem;
+  }
+
+  main {
+    margin-left: 60px;
+  }
+
+  main label {
+    font-size: 23px;
+  }
+
+  main input {
+    height: 50px;
+    font-size: 23px;
+    width: 90%;
+  }
+
+  textarea {
+    height: 300px;
+    font-size: 23px;
+    width: 90%;
+  }
+
+  section button {
+    font-size: 23px;
+    padding: 20px 40px;
+    margin-top: 30px;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+  }
+
+  footer img {
+    width: 100px;
+  }
+} /*media end*/
