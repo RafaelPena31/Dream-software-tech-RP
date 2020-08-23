@@ -50,7 +50,7 @@ header h3 {
   position: absolute;
   background-color: #f1f1f1;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -61,11 +61,18 @@ header h3 {
   display: block;
 }
 
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
 
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
-.dropdown:hover .dropbtn {background-color: transparent; border: 1px solid #fff;}
+.dropdown:hover .dropbtn {
+  background-color: transparent;
+  border: 1px solid #fff;
+}
 /*menu dropdown end*/
 /*header end*/
 
@@ -173,7 +180,6 @@ img {
 
 /*media*/
 @media (min-width: 600px) {
-
   header {
     padding: 3rem;
   }

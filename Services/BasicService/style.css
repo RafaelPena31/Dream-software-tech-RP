@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  font-family: Archivo;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+h6 {
+  width: 100%;
+  max-width: 450px;
+}
+
+/*header*/
+header {
+  height: 12vh;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    #020024 0%,
+    #af58e4 0%,
+    #6a2199 43%
+  );
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0 0 0.8rem 0.8rem;
+  margin-bottom: 17px;
+  padding: 1rem;
+}
+
+header h3 {
+  color: #fff;
+}
+
+h1 {
+  color: #27033d;
+}
+
+h4 {
+  color: #27033d;
+}
+
+/*menu dropdown*/
+.dropbtn {
+  background-color: transparent;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  min-width: 160px;
+  display: flex;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: transparent; border: 1px solid #fff;}
+/*menu dropdown end*/
+/*header end*/
+
+
+
+section {
+  text-align: center;
+  margin-top: 10px;
+}
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  margin-top: 10px;
+}
+article div {
+  display: flex;
+  flex-flow: column;
+  margin: 8px 8px;
+  background: #6b219962;
+  font-size: 1.5em;
+  padding: 1.5rem;
+  border-radius: 0.7rem;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 550px;
+}
+article div h4 {
+  text-align: left;
+}
+.img {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  width: 100%;
+  max-width: 450px;
+  border-radius: 0.4rem;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #451666;
+}
+
+footer img {
+  width: 100%;
+  max-width: 80px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+@media (min-width:600px) {
+  article {
+    flex-flow: row wrap;
+  }
+
+  section h1 {
+    margin: 0;
+    font-size: 4rem;
+  }
+}
