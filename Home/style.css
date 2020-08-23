@@ -137,6 +137,7 @@ main a img {
 }
 
 main a img:hover{
+  transform: scale(1.1);
   transition: 0.25s;
    width: 100%;
 }
@@ -147,12 +148,6 @@ main a p {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-main a p:hover{
-   transition: 0.25s;
-   font-size: 20px;
-   color: #461666;
 }
 
 main a {
@@ -216,7 +211,6 @@ footer img {
   font-weight: 400;
 }
 
-/*footer end*/
 
 @media (min-width: 600px) {
   .title {
