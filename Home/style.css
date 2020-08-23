@@ -99,13 +99,14 @@ section input {
   background: none;
   border-radius: 15px;
   border-style: none;
-  border: solid 3px #457275;
+  border: solid 3px #461666;
   transition: 0.25s;
+  cursor: pointer;
 }
 
 section input:hover {
   transition: 0.25s;
-  background: #457275;
+  background: #461666;
   color: whitesmoke;
 }
 
@@ -130,9 +131,14 @@ main {
 
 main a img {
   border-radius: 10px;
-  width: 100%;
+  width: 95%;
   max-width: 320px;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+main a img:hover{
+  transition: 0.25s;
+   width: 100%;
 }
 
 main a p {
@@ -143,11 +149,18 @@ main a p {
   align-items: center;
 }
 
+main a p:hover{
+   transition: 0.25s;
+   font-size: 20px;
+   color: #461666;
+}
+
 main a {
   cursor: pointer;
   text-decoration: none;
   color: black;
 }
+
 
 main div {
   width: 100%;
@@ -166,7 +179,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #270c38;
+  background: #461666;
 }
 
 footer img {
